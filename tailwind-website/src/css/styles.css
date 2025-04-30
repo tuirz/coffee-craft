@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles can be added below this line */
+/* Custom font families */
+@layer base {
+    body { @apply font-Poppins; }
+    h1 { @apply font-Bebas Neue; }
+    .fun { @apply font-Pacifico; }
+  }
