@@ -1,11 +1,16 @@
 module.exports = {
-  purge: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./public/**/*.html",
+    "./src/**/*.{js,css}"
+  ],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        bebas: ['Bebas Neue', 'cursive'],
+        pacifico: ['Pacifico', 'cursive'],
+      },
+    },
   },
   plugins: [],
 }
